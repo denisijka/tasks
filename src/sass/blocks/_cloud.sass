@@ -1,0 +1,81 @@
+.cloud
+	min-height: 500px
+	padding: 94px 0 95px
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		animation: moveInLeftAll 1s ease-out
+		backface-visibility: hidden
+	&__descr
+		max-width: 445px
+		margin-top: 46px
+		animation: moveInLeft 1s
+	&__heading
+		font-size: 36px
+		// line-height: 43px
+		font-weight: bold
+	&__excerpt
+		font-size: 14px
+		line-height: 19px
+		margin-top: 26px
+	&__image
+		position: relative
+		margin-right: 95px
+		display: flex
+		align-items: center
+		animation: moveInRight 1s
+	&__img
+		max-width: 455px
+		img
+			width: 100%
+	&__btn
+		position: absolute
+		left: 6%
+	&__btn
+		position: relative
+
+		width: 66px
+		height: 66px
+		border-radius: 100%
+		background: $link-color
+		i
+			position: absolute
+			top: 50%
+			left: 54%
+			transform: translate(-50%,-50%)
+			color: #FFFFFF
+			font-size: 18px
+	.link
+		font-size: 14px
+	// @keyframes moveInLeft
+
+	// 	0%
+	// 		opacity: 0
+	// 		transform: translateX(-300px)
+	// 	80%
+	// 		transform: translateX(10px)
+
+	// 	100%
+	// 		opacity: 1
+	// 		transform: translate(0)
+
+	// @keyframes moveInRight
+	// 	0%
+	// 		opacity: 0
+	// 		transform: translateX(300px)
+	// 	80%
+	// 		transform: translateX(-10px)
+	// 	100%
+	// 		opacity: 1
+	// 		transform: translate(0)
+	@keyframes moveInLeftAll
+
+		0%
+			opacity: 0
+			transform: translateX(100%)
+			// 80%
+			// 	transform: translateX(10px)
+
+		100%
+			opacity: 1
+			transform: translate(0)

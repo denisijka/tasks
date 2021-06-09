@@ -1,0 +1,52 @@
+@import "base/variables"
+@import "base/link"
+
+*,
+*::after,
+*::before
+	padding: 0
+	margin: 0
+	border: 0
+	box-sizing: border-box
+a
+	text-decoration: none
+	transition: all 0.6s
+	cursor: pointer
+	color: $link-color
+	&:hover
+		text-decoration: none
+
+ul,
+ol,
+li,
+p
+	list-style: none
+	margin-bottom: 0
+img
+	vertical-align: top
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	color: $main-color
+	font-weight: inherit
+	font-size: inherit
+	margin-bottom: 0
+
+html,body
+	height: 100vh
+	font-family: 'Lato', sans-serif
+	font-size: 18px
+	font-weight: normal
+	background: #FFFFFF
+	// background-image: url('/img/color.svg')
+.container
+	max-width: 1100px
+	margin: 0 auto
+
+@import "blocks/cloud"
+@import "blocks/features"
+@import "base/media"

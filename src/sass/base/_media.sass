@@ -1,0 +1,73 @@
+@media (max-width: 1200px)
+	/* от 992px до 1200px */
+	.container
+		max-width: 940px
+	.cloud
+
+		&__image
+			margin-right: 0
+	.features
+		&__item
+			margin-right: 15px
+		&:last-child
+			margin-right: 0
+		&__card
+			max-width: 275px
+@media (max-width: 991px)
+	/* от 768px до 992px */
+	.container
+		max-width: 730px
+	.cloud
+		&__descr
+			max-width: 349px
+		&__image
+			flex-basis: 50%
+		&__img
+			position: relative
+			z-index: 1
+		&__btn
+			position: absolute
+			left: 50%
+			transform: translateX(-50%)
+			width: 66px
+			height: 66px
+			border-radius: 100%
+			background: $link-color
+			z-index: 2
+		i
+			position: absolute
+			top: 50%
+			left: 54%
+			transform: translate(-50%,-50%)
+			color: #FFFFFF
+			font-size: 18px
+
+	.features
+
+		&__inner
+			// flex-direction: column
+			// align-items: center
+		&__item
+			box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+
+		&__card
+			padding: 33px 14px 25px
+			top: 98%
+			border-radius: 0 0 8px 8px
+@media (max-width: 767px)
+	// от 576px до 768px
+	.container
+		max-width: 520px
+	.cloud
+
+		&__wrapper
+			flex-direction: column
+			align-items: center
+		&__descr
+			max-width: 90%
+		&__image
+			margin-top: 35px
+	.features
+
+		&__inner
+			flex-direction: column
