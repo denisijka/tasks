@@ -48,8 +48,8 @@
 			// flex-direction: column
 			// align-items: center
 		&__item
-			box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
 
+		&__img
 		&__card
 			padding: 33px 14px 25px
 			top: 98%
@@ -59,15 +59,82 @@
 	.container
 		max-width: 520px
 	.cloud
-
+		// padding-top: 0
 		&__wrapper
+			height: 100vh
 			flex-direction: column
 			align-items: center
+			animation: moveInLeftAll 1s
 		&__descr
 			max-width: 90%
+			margin-top: 0
 		&__image
 			margin-top: 35px
 	.features
+		padding-top: 100px
+		&__heading
+			// animation: moveOpacity 6s
 
 		&__inner
+			display: block
+		&__item
+			display: flex
+			justify-content: space-between
+			max-width: 100%
+			max-height: 185.72px
+			margin: 30px 0 0
+			animation-name: none!important
+		&__img
+			position: static
+			width: 50%
+			z-index: 0
+			box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+		&__card
+			position: static
+			transform: translateX(-1%)
+			width: 50%
+			min-height: 180.36px
+			border-radius: 0 8px 8px 0
+			z-index: 0
+			box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1)
+		@keyframes moveInLeftAll
+
+			0%
+				opacity: 0
+				transform: translateY(100%)
+
+			100%
+				opacity: 1
+				transform: translate(0)
+		@keyframes moveOpacity
+
+			0%
+				opacity: 0
+
+			100%
+				opacity: 1
+@media (max-width: 575px)
+	// от 320px до 576px
+	.container
+		max-width: 300px
+	.cloud
+		padding: 30px 0 80px
+		&__descr
+			max-width: 100%
+			padding-top: 0
+		&__descr
+		&__image
+			margin-top: 0
+	.features
+
+		&__item
 			flex-direction: column
+			max-height: 100%
+		&__img
+			width: 100%
+		&__card
+			transform: translateY(-2%)
+			max-width: 300px
+			width: 100%
+			border-radius: 0 0 8px 8px
+			z-index: 1
